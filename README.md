@@ -1,6 +1,6 @@
 # node-js-meetup-postcss
 Sample web app project configured to use gulp, Typescript, PostCSS and stylelint. Used during the node.js meetup talk.
-For an example, confgired project you can clone to your repo, have a look at https://github.com/barbrzez/web-project-starterpack
+For an simple, confgured project you can clone to your repo, have a look at https://github.com/barbrzez/web-project-starterpack
 
 # How to run?
 Install node modules with  ```npm install```, then use ```gulp``` command, to:
