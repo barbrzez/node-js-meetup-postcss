@@ -7,7 +7,7 @@ module.exports.init = function () {
         .pipe(webserver({
           livereload: true,
           directoryListing: false,
-          open: true
+          open: false
         }));
     });
 };

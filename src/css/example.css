@@ -1,5 +1,19 @@
-.world {
-   .hello & {
-      display: inline-block;
+.hello {
+   display: flex;
+   margin-left: 20px;
+
+   .interim & {
+      display: block;
+      margin-left: 10px;
+   }
+
+   border-bottom: 1px solid #fff;
+}
+
+.welcome {
+   margin: auto;
+
+   .interim & {
+      margin: 0 10px;
    }
 }
