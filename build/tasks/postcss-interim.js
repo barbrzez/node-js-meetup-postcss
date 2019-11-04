@@ -1,8 +1,8 @@
-var postcss = require('postcss');
+const postcss = require('postcss');
 
 module.exports = postcss.plugin('postcss-interim', function (opts) {
    return function (root, result) {
-      if (process.argv[2].trim() != "--production") {
+      if (process.argv[2] && process.argv[2].trim() != "--production") {
          return;
       }
 

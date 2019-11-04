@@ -1,8 +1,8 @@
 module.exports.init = function () {
-   var gulp = require('gulp');
-   var webserver = require('gulp-webserver');
+   const gulp = require('gulp');
+   const webserver = require('gulp-webserver');
 
-   gulp.task('http', function() {
+   gulp.task('http', () => {
       return gulp.src('out')
         .pipe(webserver({
           livereload: true,

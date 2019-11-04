@@ -1,4 +1,4 @@
-var postcss = require('postcss');
+const postcss = require('postcss');
 
 module.exports = postcss.plugin('postcss-hover', function (opts) {
    return function (root, result) {

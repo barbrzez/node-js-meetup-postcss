@@ -2,7 +2,7 @@
    display: flex;
    margin-left: 20px;
 
-   .interim & {
+   .interim &{
       display: block;
       margin-left: 10px;
    }

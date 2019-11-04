@@ -1,5 +1,5 @@
 module.exports.init = function () {
-   var gulp = require('gulp');
+   const gulp = require('gulp');
 
    gulp.task('watch', function (finishedCallback) {
       gulp.watch('src/css/**/*.css', gulp.series(['css']));

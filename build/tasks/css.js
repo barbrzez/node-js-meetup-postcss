@@ -1,15 +1,14 @@
 
-module.exports.init = function() {
-   var postcss = require('gulp-postcss');
-   var gulp = require('gulp');
-   var concat = require('gulp-concat');
-   var nested = require('postcss-nested');
-   var hover = require('./postcss-hover');
-   var interim = require('./postcss-interim');
+module.exports.init = () => {
+   const postcss = require('gulp-postcss');
+   const gulp = require('gulp');
+   const concat = require('gulp-concat');
+   const nested = require('postcss-nested');
+   const hover = require('./postcss-hover');
+   const interim = require('./postcss-interim');
 
-   
-   gulp.task('css', function () {
-      var processors = [
+   gulp.task('css-compile', () => {
+      const processors = [
          interim,
          nested,
          hover
@@ -19,6 +18,8 @@ module.exports.init = function() {
          .pipe(concat("src.css"))
          .pipe(postcss(processors))
          .pipe(gulp.dest('out'));
-   });
+   })
+
+   gulp.task('css', gulp.series('lint-css', 'css-compile'));
 }
 

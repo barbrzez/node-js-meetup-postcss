@@ -1,5 +1,6 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
 
+require('./build/stylelint/lint-css').init();
 require('./build/tasks/css').init();
 require('./build/tasks/ts').init();
 require('./build/tasks/html').init();

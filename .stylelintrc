@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "./build/stylelint/interim.js"
+  ],
+  "rules": {
+    "css/interim": "true"
+  }
+}
