@@ -2,7 +2,7 @@
 module.exports.init = () => {
    const gulp = require('gulp');
 
-   gulp.task('lint-css', function lintCssTask() {
+   gulp.task('lint-css', () => {
      const gulpStylelint = require('gulp-stylelint');
 
      return gulp

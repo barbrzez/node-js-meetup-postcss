@@ -1,4 +1,4 @@
-module.exports.init = function () {
+module.exports.init = () => {
    const gulp = require('gulp');
    const webserver = require('gulp-webserver');
 

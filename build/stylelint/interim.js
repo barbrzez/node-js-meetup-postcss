@@ -6,7 +6,7 @@ const messages = stylelint.utils.ruleMessages(ruleName, {
 });
 
 module.exports = stylelint.createPlugin(ruleName, () => {
-   return function (postcssRoot, postcssResult) {
+   return (postcssRoot, postcssResult) => {
       postcssRoot.walkRules((rule) => {
          if (!rule.selector.includes(".interim")) {
             return;

@@ -1,19 +1,18 @@
-.hello {
-   display: flex;
-   margin-left: 20px;
+$color-selected-tab: blue;
+$color-legacy-selected-tab: red;
 
-   .interim &{
-      display: block;
-      margin-left: 10px;
+.header__tab {
+   border-bottom: 1px solid transparent;
+
+   &:hover {
+      border-bottom: 1px solid $color-selected-tab;
    }
-
-   border-bottom: 1px solid #fff;
 }
 
-.welcome {
-   margin: auto;
+.header__tab-selected {
+   border-bottom: 1px solid $color-selected-tab;
 
    .interim & {
-      margin: 0 10px;
+      border-bottom: 1px solid $color-legacy-selected-tab;
    }
 }
